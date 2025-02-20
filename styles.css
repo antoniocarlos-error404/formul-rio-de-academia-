@@ -1,183 +1,183 @@
 /* Reset e configuração básica */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Remove o espaço padrão em torno dos elementos */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Ajusta o cálculo de largura e altura para incluir padding e borda */
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão */
 }
 
 body {
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
-    width: 100%;
-    margin: 0;
+    background-color: #f4f4f4; /* Cor de fundo para o corpo da página */
+    display: flex; /* Define um layout flexível */
+    flex-direction: column; /* Alinha os itens na direção da coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+    padding: 20px; /* Espaçamento interno */
+    width: 100%; /* A largura ocupa 100% da tela */
+    margin: 0; /* Remove a margem padrão */
     overflow-x: hidden; /* Impede a rolagem horizontal */
 }
 
 header {
-    background-color: #0275d8;
-    color: white;
-    text-align: center;
-    width: 100%;
-    padding: 20px 0;
-    font-size: 1.8rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    background-color: #0275d8; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Largura total */
+    padding: 20px 0; /* Preenchimento no topo e na base */
+    font-size: 1.8rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no título */
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-wrap: wrap; /* Permite a quebra de linha se necessário */
 }
 
 main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    width: 100%; /* Largura total */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100%; /* Ocupa 100% da altura */
 }
 
 .form-container {
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 900px;
-    margin: 30px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    background: white; /* Cor de fundo do formulário */
+    padding: 40px; /* Preenchimento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do formulário */
+    width: 100%; /* Largura total */
+    max-width: 900px; /* Largura máxima do formulário */
+    margin: 30px auto; /* Centraliza o formulário e adiciona margem */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Alinha os itens em coluna */
+    gap: 25px; /* Espaço entre os elementos dentro do formulário */
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: flex; /* Layout flexível para o formulário */
+    flex-direction: column; /* Alinha os itens do formulário em coluna */
+    gap: 20px; /* Espaço entre os campos */
 }
 
 fieldset {
-    border: none;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: space-between;
-    width: 100%; /* Garantir que o fieldset ocupe toda a largura disponível */
+    border: none; /* Remove a borda padrão do fieldset */
+    padding: 20px; /* Preenchimento interno */
+    background: #f9f9f9; /* Cor de fundo do campo */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex; /* Layout flexível */
+    flex-wrap: wrap; /* Permite que os itens se ajustem ao tamanho disponível */
+    gap: 15px; /* Espaço entre os elementos dentro do fieldset */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    width: 100%; /* Largura total do fieldset */
 }
 
 legend {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #333;
+    font-weight: bold; /* Deixa o título do fieldset em negrito */
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    color: #333; /* Cor do texto do título */
 }
 
 label {
-    font-weight: bold;
-    color: #444;
+    font-weight: bold; /* Deixa as labels em negrito */
+    color: #444; /* Cor do texto das labels */
 }
 
 .input-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 48%;
+    display: flex; /* Layout flexível para os campos de entrada */
+    flex-direction: column; /* Alinha as labels e inputs em coluna */
+    width: 100%; /* Largura total */
+    max-width: 48%; /* Largura máxima de cada grupo de input */
 }
 
 input, select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border 0.3s ease-in-out;
+    width: 100%; /* Largura total do campo */
+    padding: 12px; /* Preenchimento interno */
+    border: 1px solid #ccc; /* Cor da borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: border 0.3s ease-in-out; /* Efeito de transição para a borda */
 }
 
 input:focus, select:focus, textarea:focus {
-    border-color: #0275d8;
-    outline: none;
-    box-shadow: 0 0 5px rgba(2, 117, 216, 0.5);
+    border-color: #0275d8; /* Altera a cor da borda ao focar */
+    outline: none; /* Remove a linha de contorno */
+    box-shadow: 0 0 5px rgba(2, 117, 216, 0.5); /* Adiciona sombra suave ao redor do campo */
 }
 
 textarea {
-    resize: none;
-    height: 120px;
+    resize: none; /* Impede a redimensionamento do textarea */
+    height: 120px; /* Define a altura fixa do textarea */
 }
 
 button {
-    background-color: #0275d8;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-    width: 100%;
+    background-color: #0275d8; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 15px; /* Preenchimento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no texto */
+    cursor: pointer; /* Cursor de pointer ao passar por cima */
+    transition: background 0.3s ease-in-out; /* Efeito de transição na cor de fundo */
+    width: 100%; /* Largura total do botão */
 }
 
 button:hover {
-    background-color: #025aa5;
+    background-color: #025aa5; /* Cor de fundo ao passar o mouse sobre o botão */
 }
 
 footer {
-    text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-    width: 100%;
-    background: #0275d8;
-    color: white;
-    font-size: 1.1rem;
+    text-align: center; /* Centraliza o texto do rodapé */
+    margin-top: 30px; /* Espaçamento superior */
+    padding: 20px; /* Preenchimento interno */
+    width: 100%; /* Largura total do rodapé */
+    background: #0275d8; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+    font-size: 1.1rem; /* Tamanho da fonte */
 }
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     body {
-        justify-content: flex-start;
+        justify-content: flex-start; /* Alinha o conteúdo no topo para telas menores */
     }
 
     .form-container {
-        width: 100%;
-        max-width: 100%;
-        padding: 15px;
+        width: 100%; /* A largura ocupa 100% da tela */
+        max-width: 100%; /* A largura máxima também é 100% */
+        padding: 15px; /* Preenchimento reduzido */
     }
 
     .input-group {
-        max-width: 100%;
+        max-width: 100%; /* Os campos ocupam toda a largura disponível */
     }
 
     fieldset {
-        flex-direction: column;
-        width: 100%;
+        flex-direction: column; /* Alinha os itens em coluna para telas pequenas */
+        width: 100%; /* Largura total do fieldset */
     }
 
     button {
-        font-size: 1rem;
-        padding: 12px;
+        font-size: 1rem; /* Reduz o tamanho da fonte do botão */
+        padding: 12px; /* Reduz o preenchimento do botão */
     }
 
     header {
-        font-size: 1.5rem;
-        padding: 15px 10px;
-        text-align: center;
+        font-size: 1.5rem; /* Tamanho da fonte reduzido no cabeçalho */
+        padding: 15px 10px; /* Reduz o preenchimento no cabeçalho */
+        text-align: center; /* Centraliza o texto no cabeçalho */
     }
 }
 
 @media (max-width: 480px) {
     header {
-        font-size: 1.2rem;
-        padding: 10px 5px;
+        font-size: 1.2rem; /* Tamanho ainda menor no cabeçalho para telas muito pequenas */
+        padding: 10px 5px; /* Preenchimento menor */
     }
 
     .form-container {
-        padding: 10px;
+        padding: 10px; /* Preenchimento reduzido no formulário */
     }
 }
